@@ -117,7 +117,7 @@ const messages = {
 
 const browserLanguage = navigator.language.split("-")[0];
 export const i18n = new VueI18n({
-  locale: messages.hasOwnProperty(browserLanguage) ? browserLanguage : "en", // set locale
+  locale: messages[browserLanguage] ? browserLanguage : "en",
   fallbackLocale: "en",
-  messages // set locale messages
+  messages
 });

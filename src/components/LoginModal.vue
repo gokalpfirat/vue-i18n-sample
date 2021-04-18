@@ -11,8 +11,7 @@
       <input
         v-if="state === 'register'"
         type="text"
-        name=""
-        id=""
+        name="name"
         :placeholder="$t('modal.name_placeholder')"
         v-model="name"
         class="modal__input"
@@ -20,8 +19,7 @@
       <input
         class="modal__input"
         type="email"
-        name=""
-        id=""
+        name="email"
         :placeholder="$t('modal.email_placeholder')"
         v-model="email"
       />
@@ -29,8 +27,7 @@
         class="modal__input"
         type="password"
         :placeholder="$t('modal.password_placeholder')"
-        name=""
-        id=""
+        name="password"
         v-model="password"
       />
       <a
