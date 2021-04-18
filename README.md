@@ -26,3 +26,9 @@ $ npm run serve
 # if you want production build
 $ npm run build
 ```
+
+```
+# Test account for login, if you not prefer registering
+Email: test@test.com
+Pass: 123456
+```
