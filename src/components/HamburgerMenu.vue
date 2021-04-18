@@ -1,19 +1,19 @@
 <template>
   <div class="hamburger_menu" :class="{ 'hamburger_menu--show': showMenu }">
     <RouterLink
-      class="navbar__link hamburger_menu--link"
+      class="hamburger_menu--link"
       to="/"
       @click.native="$emit('toggle')"
       >{{ $t("homepage.menuName") }}</RouterLink
     >
     <RouterLink
-      class="navbar__link hamburger_menu--link"
+      class="hamburger_menu--link"
       to="/contact"
       @click.native="$emit('toggle')"
       >{{ $t("contact.menuName") }}</RouterLink
     >
     <div
-      class="navbar__link hamburger_menu--link"
+      class="hamburger_menu--link"
       v-if="!isLoggedIn"
       @click="switchModal(true)"
     >
@@ -100,6 +100,7 @@ export default {
   text-decoration: none;
   font-weight: bold;
   height: 30px;
+  color: #FF8C42;
   border-bottom: 1px solid black;
 }
 
@@ -121,10 +122,13 @@ export default {
 .hamburger_menu__language {
   width: 50%;
   padding: 1rem;
-  border-right: 1px solid black;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
+}
+
+.hamburger_menu__language:nth-child(1) {
+  border-right: 1px solid black;
 }
 
 .hamburger_menu__languageImage {
@@ -151,5 +155,11 @@ export default {
   align-items: center;
   cursor: pointer;
   margin-top: 0.25rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .hamburger_menu {
+    display: none;
+  }
 }
 </style>
