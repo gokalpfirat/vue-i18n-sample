@@ -168,7 +168,7 @@ export default {
         this.isPhoneNumberValid = null;
         return;
       }
-      const regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+      const regex = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/im;
       this.isPhoneNumberValid = regex.test(e.target.value);
     },
   },
