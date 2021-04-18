@@ -9,6 +9,11 @@ export const state = {
       name: "Gokalp",
       email: "gokalpfirat@gmail.com",
       password: "123456"
+    },
+    {
+      name: "Test",
+      email: "test@test.com",
+      password: "123456"
     }
   ]
 };
