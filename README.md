@@ -5,6 +5,10 @@ Demo: https://gokalpfirat.github.io/vue-l18n-sample/#/
 Because Github Pages not supporting history mode at Vue Router, I used hash mode just for github pages. It's still at history mode in repo.
 Automatically takes your locale from browser and sets it if there's translations for it, fallback set as English.
 
+CSS written in BEM(Block, Element and Modifier) Methodology.
+
+Preprocessors(Ex. Sass) not used, no scoped css also.
+
 ## Technologies & Packages Used
 * Vue 2 Option API
 * [Vue l18n](https://kazupon.github.io/vue-i18n/) for localization
