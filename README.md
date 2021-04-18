@@ -1,6 +1,6 @@
 # vue-l18n-sample
 
-Demo: https://gokalpfirat.github.io/vue-i18n-sample/#/ 
+Demo: https://gokalpfirat.github.io/vue-l18n-sample/#/
 
 Because Github Pages not supporting history mode at Vue Router, I used hash mode just for github pages. It's still at history mode in repo
 
