@@ -10,5 +10,17 @@ export const actions = {
         return reject();
       }
     });
+  },
+  registerUser({ state, commit }, payload) {
+    return new Promise((resolve, reject) => {
+      const { name, email, password } = payload;
+      const user = state.users.find((user) => user.email === email);
+      if (user) {
+        return reject();
+      } else {
+        commit("registerUser", {name, email, password});
+        return resolve();
+      }
+    });
   }
 };

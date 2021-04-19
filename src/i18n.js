@@ -38,7 +38,7 @@ const messages = {
     modal: {
       titleLogin: "Login",
       titleRegister: "Register",
-      name_placeholder: "Nema",
+      name_placeholder: "Name",
       email_placeholder: "Email",
       password_placeholder: "Password",
       noAccount: "Don't you have an account? Click to register!",
@@ -46,7 +46,8 @@ const messages = {
       login: "Login",
       register: "Register",
       unsuccessfullLogin: "Unsuccesfull login!",
-      unsuccessfullRegister: "Missing inputs!"
+      unsuccessfullRegister: "Missing inputs!",
+      registerAlreadyInUse: "Email alrady in use, try to login!"
     },
     country: {
       TR: "Turkey",
@@ -100,7 +101,8 @@ const messages = {
       login: "Giriş",
       register: "Kayıt",
       unsuccessfullLogin: "Başarısız giriş!",
-      unsuccessfullRegister: "Bilgiler eksik!"
+      unsuccessfullRegister: "Bilgiler eksik!",
+      registerAlreadyInUse: "Email zaten kullanılıyor, giriş yapmayı deneyin!"
     },
     country: {
       TR: "Türkiye",

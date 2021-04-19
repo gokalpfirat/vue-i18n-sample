@@ -95,15 +95,21 @@ export default {
         name,
         email,
         password,
-      });
-      this.setModalError(null);
-      this.changeState();
+      }).then(
+        () => {
+          this.setModalError(null);
+          this.changeState();
+        },
+        () => {
+          this.setModalError(this.$t("modal.registerAlreadyInUse"));
+        }
+      );
     },
     changeState() {
       this.state = this.state === "login" ? "register" : "login";
     },
-    ...mapMutations(["registerUser", "switchModal", "setModalError"]),
-    ...mapActions(["loginUser"]),
+    ...mapMutations(["switchModal", "setModalError"]),
+    ...mapActions(["loginUser", "registerUser"]),
   },
   computed: {
     ...mapState(["modalError"]),
